@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skill and Job Recommender
+    </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="logo">
+            <h4>Skill and Job Recommender </h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('joinus') }}"> <button id="btn">Join</button></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- Image -->
+    <div class="image-box">
+        <img class="image" src="{{ url_for('static', filename='images/work-g7fd994c01_1920.jpg') }}" width="1550">
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='JS/navbar.js')}}"></script>
+</body>
+
+</html>
