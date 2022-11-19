@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SJR</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "06ee3fb3-8d33-4d42-ba52-c09b3ddecdd8", // The ID of this integration.
+          region: "us-east", // The region your integration is hosted in.
+          serviceInstanceID: "2b9a9211-94e6-470b-846d-a53d441e94ce", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url({{url_for('static',filename='img2.jpg')}});
+            background-size: 85% 100%;
+            background-repeat: no-repeat;
+        }
+        </style>
+
+        <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SJR.COM</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/skill">SKILL</a></li>
+                    <li><a href="/aboutus">ABOUTUS</a></li>
+                    
+                    
+                </ul>
+            </div>
+
+            
+
+        </div> 
+        <div class="content">
+            <h1>Welcome to your<br> Professional Community</h1>
+            <p class="par">When I say develop your skills,I don't mean related to every business area of that industry.This is not very realistic.I mean,the field of your expertise in that industry.
+                Never chase opportunities.Let it come to you by creating a value and building rare skillsets.
+            </p>
+
+            <button class="cn"><a href="signup">Apply Job</a></button>
+
+                
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
