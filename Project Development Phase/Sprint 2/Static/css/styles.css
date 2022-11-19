@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+nav{
+	width: 100%;
+	height: 75px;
+	background-color: #505d61;
+	line-height: 75px;
+	padding:0px 100px;
+	position:fixed;
+	z-index: 1;
+}
+nav .logo{
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 1.5px; 
+}
+nav .logo p{
+	float: left;
+	color:#fff;
+	text-transform: uppercase;
+}
+nav ul{
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li a{
+	color:#fff;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding:0px 32px;
+}
+nav ul li a:hover{
+	color:#c0d96f;
+}
+nav ul li .active{
+	color:#c0d96f;
+}
+/* .image img{
+	width: 100%;
+	height: 0px auto;
+	opacity: 0.80;
+} */
+.input_search
+{
+    margin-top: -73px;
+    margin-left: 250px; 
+    width: 500px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    padding-left: 20px;
+}
+.button_search
+{
+    position: absolute;
+    margin-top: -73px;
+    height: 44px;
+    margin-left: 790px;
+    width: 80px;
+    background-color:white;
+    border-radius: 5px;
+    font-family: Century Gothic;
+}
+.button_search:hover
+{
+    background-color:#E0E0E0;
+    color: whitesmoke;
+}
+footer
+{
+    height: 30px;
+    background-color: rgb(255, 63, 63);
+    width: 100%;
+}
+.head {
+    height: 50px;
+    width: 100%;
+    color: whitesmoke;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+
+
+.head-git{
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 244, 244);
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 5px;
+  }
+  .head-git h2 {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+  }
+  .head-git h2 a { 
+    text-decoration: none;
+    color:#f1f1f1;
+    font-size: 23px;
+  }
+  .head-git h2 a:hover { 
+    color:rgb(211, 47, 41);
+    background-color: beige;
+  }
+
+  .wrapper {
+    height: 200px;
+    width: 100%;
+    margin-left:150px;
+    display: flex;
+    padding: 10px;
+}
+.wrapper .item {
+    height: 200px;
+    min-width: 20%;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 0.5px;
+    border-bottom: 1px black;
+}
+.wrapper .item img {
+    height: 100%;
+    width: 100%;
+}
+.c-box {
+    height: content;
+    max-width: 50%;
+    display: flex;
+    padding: 10px;
+    flex-flow: column;
+    padding: 1px;
+} 
+.c-box .content {
+    height: content;
+    min-width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 130px;
+    text-decoration: none;
+}
+.c-box .content p {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.c-box .content h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.head-f{
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    border-top: 2px solid black;
+    display: flex;
+    flex-flow: column;
+  }
+  .head-f h2 {
+    font-size: 15px;
+    color:black;
+  }
+
+  /*register and login css*/
+  
+  /* Add padding to containers */
+  .container {
+    padding: 125px;
+  
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #d61313;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .submitbtn {
+    background-color: rgb(211, 47, 41);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 10px;
+  }
+  
+  .submitbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+.form_label
+{
+  margin-left: 35%;
+}
+.form_input
+{
+  margin-left: 35%;
+  width: 500px;
+  height: 42px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(102, 83, 42);
+}
+form {
+  /* display: inline-block;
+  position: absolute; */
+  top: 150px;
+  /* left: 50px; */
+}
+
+input {
+  display: inline-block;
+}
+div.a{
+  text-align: justify;
+  text-align-last: center;
+
+}
+
