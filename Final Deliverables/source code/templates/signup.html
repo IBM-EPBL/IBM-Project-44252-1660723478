@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <p>SJR.COM</p>
+            </div>
+            <ul>
+                <li><a href="{{url_for('home')}}">Back to page</a></li>
+            </ul>
+        </nav>
+    
+        
+        <div class="container"> <br /><br />
+        <form action="/signup" method="POST">
+         <h1 style="text-align: center;">Login</h1> <br /><br />
+            <label class="form_label"for="email"><b>Email</b></label><br><br>
+            <input class="form_input"type="text" name= "email" /><br><br>
+            <label class="form_label"for="psw"><b>Password</b></label><br><br>
+            <input class="form_input"type="password" name="password"/>
+            </br></br></br>
+            <center><input type="submit" class="submitbtn"value="submit">
+                <ul>
+                    
+                    <p>Don't have a account <a href="{{url_for('register')}}">Create new account</a></p>
+                </ul>
+            </center>
+        </form>
+        </div>
+    
+    </body>
+</html>

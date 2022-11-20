@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Registration page</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <p>SJR.COM</p>
+                </div>
+                <ul>
+                    <li><a href="{{url_for('home')}}">Back to page</a></li>
+                </ul>
+            </nav>
+    </header>
+    
+    
+        <div class="container">
+        <form action="/register" method="POST">
+        
+            <h2 style="text-align: center;">Registration</h2>
+            <label class="form_label"for="email"><b>Email ID</b></label><br><br>
+            <input class="form_input"type="email" name="email"/><br><br>
+            <label class="form_label"for="user"><b>Username</b></label><br><br>
+            <input class="form_input"type="text" name= "username" /><br><br>
+            <label class="form_label"for="psw"><b>Password</b></label><br><br>
+            <input class="form_input"type="password" name="password"/><br><br>
+            <label class="form_label"for="pho"><b> Enter Phone number:</b></label><br><br>
+            <input class="form_input"type="text" name="phonenumber"/><br><br>
+            <!-- <input type="submit" class="submitbtn"value="submit" />
+            <p>Already have a account <a href="{{url_for('signup')}}">Sign in</a></p> -->
+            </br></br></br>
+           <center> {% if error %}  
+        <p><strong style="color:red">Error</strong>: {{error}}</p>  
+    {% endif %} 
+    {% with messages = get_flashed_messages() %}  
+         {% if messages %}  
+               {% for message in messages %}  
+                    <p style="color:green">{{ message }}</p>  
+               {% endfor %}  
+         {% endif %}  
+      {% endwith %} </center>
+      <div style="text-align: center;"><a>
+            <input type="submit" class="submitbtn"value="submit" />
+            <p>Already have a account <a href="{{url_for('signup')}}">Sign in</a></p>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
